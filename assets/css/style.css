@@ -1450,6 +1450,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     gap: 25px;
     padding: 30px;
     border-radius: 20px;
+    color: white; /* Change to your desired color */
   }
 
   .modal-img-wrapper {
