@@ -24,7 +24,7 @@ The data rail voltage and rail current consumption on each rail is preprocessed 
     - [3.2 UART Properties Sender Side](#)
     - [3.2 UART Properties Receiver Side](#)
 
-- [4.0 (x86) Linux Application](#firmware)
+- [4.0 (x86) Linux Application](#linux-application)
 - [5.0 Hardware Design & Other Constrains](#hardware-design)
     * [5.1 INA3221 Hardware Design](#ina3221-breakout-board)
 - [6.0 Conclusion](#firmware)
@@ -108,5 +108,10 @@ The hardware part of the design can be divided into two subsections, part onw wh
 The following schematic board is used foe the implementation of the current sensor.
 
 In the following board implementation the A0 pin of the INA3221 is tied to GND hence the device address is 0b1000000. This value is used to address the slave over the I2C bus.
-<!-- Block Diagram of the Power Monitor -->
+<!--Power Monitor Breakout Board Schematic Snippet -->
 ![System Block Diagram](Schematic_Snippet.png)
+
+
+## Linux Application 
+<!--Power Monitor Breakout Board Schematic Snippet -->
+![System Block Diagram](DATA_PACKETS_UART.png)
