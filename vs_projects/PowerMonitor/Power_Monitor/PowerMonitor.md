@@ -106,8 +106,9 @@ The hardware part of the design can be divided into two subsections, part onw wh
 
 ### INA3221 Breakout Board
 
-<!--Power Monitor Breakout Board Schematic Snippet -->
-<img src="Schematic_Snippet.png" alt="System Block Diagram" style="float: left; margin-right: 10px; width: 50%;" />
+<p style="float: left; margin-right: 10px;">
+    <img src="Schematic_Snippet.png" alt="System Block Diagram" width="200" />
+</p>
 
 
 The following schematic board is used foe the implementation of the current sensor.
