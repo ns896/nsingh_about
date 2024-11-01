@@ -16,16 +16,17 @@ The data rail voltage and rail current consumption on each rail is preprocessed 
 
 - [2.0 System Overview](#system-overview)
     * [2.1 INA3221 Measurements BUS Voltage](#ina3221-measurements-bus-voltage)
-    * [2.2 INA3221 Measurements SHUNT Voltage](#ina3221-measuremets-shunt-voltage)
+    * [2.2 INA3221 Measurements SHUNT Voltage](#ina3221-measurements-shunt-voltage)
     * [2.3 INA3221 Measurements SHUNT SUMMATION](#ina3221-measuremetns-shunt-summation)
 
-- [3.0 STM32H7 Data Flow](#timing-diagrams)
-    - [3.1 UART Packet Encoding and Decoding Scheme](#radar-head-trigger-timing-diagram-calculation)
-    - [3.2 UART Properties Sender Side](#camera-fw-trigger-timing-diagram-calculation)
-    - [3.2 UART Properties Receiver Side](#camera-fw-trigger-timing-diagram-calculation)
+- [3.0 STM32H7 Data Flow](#stm32h7-data-flow)
+    - [3.1 UART Packet Encoding and Decoding Scheme](#uart-packet-encoding)
+    - [3.2 UART Properties Sender Side](#)
+    - [3.2 UART Properties Receiver Side](#)
 
 - [4.0 (x86) Linux Application](#firmware)
-- [5.0 Hardware Design & Other Constrains](#firmware)
+- [5.0 Hardware Design & Other Constrains](#hardware-design)
+    * [5.1 INA3221 Hardware Design](#ina3221-breakout-board)
 - [6.0 Conclusion](#firmware)
 
 <!-- Introduction -->
@@ -73,3 +74,39 @@ Divide the value by the resistance of the SHUNT resistor on PCB (value in Amps)
 Multiply the value by 1000 (value in mAmps)
 For the code implementation, refer to the following GitHub link: INA3221 Code Line on GitHub
 
+## STM32H7 Data Flow
+The Firmware on STM32H7 is responsible for sending the data from the MCU to the main PC, on the UART bus. The BAUD RATE of the UART is 115200 Bits/second (needed to set up the host).
+
+### UART PACKET ENCODING
+The data coming out of the MCU will be in a form of data packets. Protocol that will be followed by the sender will be as follows.
+
+SOF -> Data_0.1 -> Data_0.2 -> Data_1.0 -> Data_1.2 ......... -> EOF Each data packet is consisting of 16 bits of channel data. The protocol will have 6 channels, three for shut voltage and three for bus voltage.
+
+``` bash
+SOF : Start of Frame == 0x02
+BYTE1 : DATA
+BYTE2 : DATA
+BYTE3 : DATA
+BYTE4 : DATA
+...
+BYTE(n-2) : DATA
+BYTE(n-1) : DATA
+EOF (n) : END of Frame == 0x3
+
+```
+
+SOF EOF CONFLICT RESOLUTION
+SOF/EOF Conflict Resolution When the data to be transmitted conflicts with the Start of Frame (SOF) or End of Frame (EOF) bytes, we will use a byte stuffing option. A special character will be transmitted before the conflicting byte, which will be an XOR of the conflict byte with the special character.
+* Special Character: 0x1B
+<!-- Block Diagram of the Encoding Data Protocol -->
+![System Block Diagram](UART_DATAPACKET.png)
+
+## Hardware Design
+The hardware part of the design can be divided into two subsections, part onw which deals with the implementation of INA3221 IC and the surrounding support needed by it, i.e. power supply, shunt resistors and decoupling caps. The second part of the hardware design is the implementation of the ARM MCU and its connection to the INA3221. for this implementation I am using the ARM development board from STM32H7.
+
+### INA3221 Breakout Board
+The following schematic board is used foe the implementation of the current sensor.
+
+In the following board implementation the A0 pin of the INA3221 is tied to GND hence the device address is 0b1000000. This value is used to address the slave over the I2C bus.
+<!-- Block Diagram of the Power Monitor -->
+![System Block Diagram](Schematic_Snippet.png)
