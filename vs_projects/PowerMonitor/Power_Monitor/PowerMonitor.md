@@ -105,12 +105,16 @@ SOF/EOF Conflict Resolution When the data to be transmitted conflicts with the S
 The hardware part of the design can be divided into two subsections, part onw which deals with the implementation of INA3221 IC and the surrounding support needed by it, i.e. power supply, shunt resistors and decoupling caps. The second part of the hardware design is the implementation of the ARM MCU and its connection to the INA3221. for this implementation I am using the ARM development board from STM32H7.
 
 ### INA3221 Breakout Board
+
+<!--Power Monitor Breakout Board Schematic Snippet -->
+<img src="Schematic_Snippet.png" alt="System Block Diagram" style="float: left; margin-right: 10px; width: 50%;" />
+
+
 The following schematic board is used foe the implementation of the current sensor.
 
 In the following board implementation the A0 pin of the INA3221 is tied to GND hence the device address is 0b1000000. This value is used to address the slave over the I2C bus.
-<!--Power Monitor Breakout Board Schematic Snippet -->
-![System Block Diagram](Schematic_Snippet.png)
 
+<div style="clear: both;"></div>
 
 ## Linux Application 
 <!--Power Monitor Breakout Board Schematic Snippet -->
