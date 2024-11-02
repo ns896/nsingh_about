@@ -110,7 +110,6 @@ The hardware part of the design can be divided into two subsections, part onw wh
     <img src="Schematic_Snippet.png" alt="System Block Diagram" width="200" />
 </p>
 
-
 The following schematic board is used foe the implementation of the current sensor.
 
 In the following board implementation the A0 pin of the INA3221 is tied to GND hence the device address is 0b1000000. This value is used to address the slave over the I2C bus.
