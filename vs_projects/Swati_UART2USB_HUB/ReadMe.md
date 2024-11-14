@@ -30,7 +30,7 @@ This project leverages the TUSB2036 USB hub IC to create a versatile 8-channel U
 <!-- Introduction -->
 ##  Introduction
 <p><div align="left">
-This power monitoring system leverages the capabilities of the INA3221 power monitor supervisor IC. It can measure voltage rails relative to GND, thus providing the absolute rail voltage and also the shunt voltage across a shunt resistor, which can be translated by an MCU into current consumption values for each voltage rail. Additionally, the system includes various alert and supervisor functions that can be configured to provide protection for circuits, ensuring robust and reliable power management.<br>
+
 
 ### Features
 + Voltage rails measurement 0-26 Volts.
@@ -40,7 +40,7 @@ This power monitoring system leverages the capabilities of the INA3221 power mon
 + Averaging mode on IC upto 1024 number of samples that are averaged.
 
 ### Main Silicon Components 
-+ INA3221 - (Texas Instruments)
++ TUSB2036 - (Texas Instruments)
 + STM32H743 - (STMicro)
 + FTDI USB to UART (FTDI)
 + Voltage Regulator (STMicro)
