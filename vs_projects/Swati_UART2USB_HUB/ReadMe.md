@@ -47,7 +47,9 @@ The board is designed to operate independently, powered by an external 12V suppl
 
 </p></div>
 
-### Features :maple_leaf:
+### Features
+
+:maple_leaf:
 
 - Inependent of bus volatge, powerded from 12V DC supply.
 - One signle USB 2.0 host connection.
@@ -73,6 +75,10 @@ The Shunt_Voltage is a difference voltage reading on the two ends of the SHUNT_R
 The per channel voltages can be summed up or averaged by the INA3221 FSM itself. The configration register space 11-9 bit, can be used to define how many samples are summed up to make a valid reading. Values include 1,4,16,64,128,1024. Default value is 1, I have not played with it much to see the effect. But the mathematical implications are Lower Noise and Accuracy improvement.
 
 The INA3221 communicates with the MCU on the I2C bus. The max operating frequency for the SCL line is 2.44MHz. This is only the case for the high speed mode which needs a repeated start condition for entering a high speed communication mode. in Fast/Normal mode the maximum frequency of communication is not more then 0.4MHz(400Khz).
+
+![SWATI PCB Overview](/vs_projects/Swati_UART2USB_HUB/assets/Swati_PCB.png)
+
+<p><div align="center"> IMAGE-1 SWATI - Block Diagram </div> </p>
 
 ### INA3221 Measurements BUS Voltage
 
