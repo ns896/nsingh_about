@@ -4,6 +4,7 @@ This project leverages the TUSB2036 USB hub IC to create a versatile 8-channel U
 
 <!-- Block Diagram of the Power Monitor -->
 ![System Block Diagram](/vs_projects/Swati_UART2USB_HUB/assets/Swati_BD.png)
+<p> IMAGE-1 SWATI - Block Diagram</p>
 
 <!-- Table of Contents -->
 # :notebook_with_decorative_cover: Table of Contents
@@ -30,14 +31,18 @@ This project leverages the TUSB2036 USB hub IC to create a versatile 8-channel U
 <!-- Introduction -->
 ##  Introduction
 <p><div align="left">
+The Swati USB-to-8-Channel UART board was designed to provide seamless UART communication through a single USB connection on the Jetson Xavier AGX platform. This board connects to the available USB port and offers 8 UART channels, interfacing with FPD-Link serializer and deserializer ICs (DS90UB954-Q1) for reliable, multi-channel communication.
 
+This UART communication is achieved over the FPD-Link back channel, which is essential for configuring and managing the FPD-Link serializers. By providing a single USB-to-UART interface for up to 8 LVDS data streams, this board significantly simplifies communication and setup on the back channel, making it an efficient solution for multi-channel data serialization and capture.
+
+The board is designed to operate independently, powered by an external 12V supply via a barrel connector, preventing USB power overload and keeping within the 500mA current limitation of USB 2.0.
+</p></div>
 
 ### Features
-+ Voltage rails measurement 0-26 Volts.
-+ Current Consumption on each rails.
-+ Programmable Alert and Warning Outputs, on MCU GPIO interrupts.
-+ Software controlled reset.
-+ Averaging mode on IC upto 1024 number of samples that are averaged.
++ Inependent of bus volatge, powerded from 12V DC supply.
++ One signle USB 2.0 host connection.
++ 8 parallel USB-UART bridges avaiable.
++ Each bridge has multiple GPIOs available, configrable from USB host side.
 
 ### Main Silicon Components 
 + TUSB2036 - (Texas Instruments)
