@@ -19,8 +19,8 @@ This project leverages the TUSB2036 USB hub IC to create a versatile 8-channel U
 
 - [2.0 System Overview](#system-overview)
 
-  - [2.1 INA3221 Measurements BUS Voltage](#ina3221-measurements-bus-voltage)
-  - [2.2 INA3221 Measurements SHUNT Voltage](#ina3221-measurements-shunt-voltage)
+  - [2.1 TUSB2036VFR Implementation](#tusb2036vfr-implementation)
+  - [2.2 CP2012N-A02-GQFN28R Implementation](#cp2012n_a02_gqfn28r-implementation)
   - [2.3 INA3221 Measurements SHUNT SUMMATION](#ina3221-measuremetns-shunt-summation)
 
 - [3.0 STM32H7 Data Flow](#stm32h7-data-flow)
@@ -65,38 +65,25 @@ The board is designed to operate independently, powered by an external 12V suppl
 - CP2012N-A02-GQFN28R - USB to Uart bridge (Silicon Labs)
 
 ## System Overview
+The Swati USB-to-8-Channel UART board operates on the concept of USB downport multiplexing to efficiently manage multiple UART channels through a single USB connection. At the heart of this system is the TUSB2036 USB hub controller, which uses a finite state machine (FSM) to multiplex a single upstream USB port into three downstream USB 1.1-compliant ports. Each TUSB2036 chip provides three additional downstream ports while maintaining compatibility with the USB 2.0 specification for the upstream port.
 
-INA3221 is used to measure the various voltages and also performs the analog to digital conversion for the various systems measurements that are needed for the power monitoring and supervision purpose. Various native measurements that are performed on the INA3221 IC itself are Bus_Voltage, Shunt_Voltage and Shunt_Voltage_Sum.
+To achieve the required number of UART channels, four TUSB2036 controllers are configured in parallel, enabling up to nine downstream USB ports from the main USB 2.0 interface. Each of these downstream ports is connected to a dedicated USB-to-UART bridge IC (the CP2102N-A02-GQFN28R), which converts the USB data into UART communication. This arrangement provides robust, independent UART channels that interface seamlessly with each of the FPD-Link serializers and deserializers (DS90UB954-Q1 ICs) in the system, facilitating reliable communication over each UART line.
 
-The Bus_Voltage is simply a ADC reading on the IN_1,IN_2,IN_3 pins of the INA3221 IC. This bus voltage can only go 26_Volts on that pin. This voltage can be measured with a accuracy of 8mV, this is driven by the ADC of the INA3221.
+Each CP2102N USB-to-UART bridge channel provides standard UART features, including configurable baud rates, parity, stop bits, and flow control, allowing for flexible integration with a variety of serializer and deserializer configurations. By consolidating all UART channels through USB, this board minimizes the number of physical connections needed to establish communication, simplifying wiring complexity and improving manageability.
 
-The Shunt_Voltage is a difference voltage reading on the two ends of the SHUNT_Resistor. Voltage measurements on pins VIN+1**VIN-1, VIN+2**VIN-2, VIN+3\_\_VIN-3. The voltage difference and the accurate value of resistance can be used to calculate the current flowing through that rail.
-
-The per channel voltages can be summed up or averaged by the INA3221 FSM itself. The configration register space 11-9 bit, can be used to define how many samples are summed up to make a valid reading. Values include 1,4,16,64,128,1024. Default value is 1, I have not played with it much to see the effect. But the mathematical implications are Lower Noise and Accuracy improvement.
-
-The INA3221 communicates with the MCU on the I2C bus. The max operating frequency for the SCL line is 2.44MHz. This is only the case for the high speed mode which needs a repeated start condition for entering a high speed communication mode. in Fast/Normal mode the maximum frequency of communication is not more then 0.4MHz(400Khz).
+The upstream USB port on the Swati board adheres to USB 2.0 specifications, ensuring compatibility with a wide range of USB host devices. Additionally, the board's design leverages an external 12V power supply, ensuring it remains within the 500mA current limit of USB 2.0 by not drawing power directly from the USB bus. This self-powered setup provides stable operation for all connected UART channels without risk of overloading the host USB port.
 
 ![SWATI PCB Overview](/vs_projects/Swati_UART2USB_HUB/assets/Swati_PCB.png)
 
-<p><div align="center"> IMAGE-1 SWATI - Block Diagram </div> </p>
+<p><div align="center"> IMAGE-2 SWATI PCB MarkDown </div> </p>
 
-### INA3221 Measurements BUS Voltage
+### TUSB2036VFR Implementation
 
-The BUS_VOLTAGE is stored in the register space at addresses 0x02, 0x04, and 0x06 for the respective channels. To convert the ADC digital reading to a floating-point value, follow these steps:
+TUSB2036VFR Implementation
 
-Right shift the ADC reading by 3 bits.
-Multiply the result by 8mV to obtain the absolute voltage.
-For the code implementation, refer to the following GitHub link: INA3221 Code Line on GitHub
+### CP2012N_A02_GQFN28R Implementation
 
-### INA3221 Measurements SHUNT Voltage
-
-The BUS_VOLTAGE is stored in the register space at addresses 0x01, 0x03, and 0x05 for the respective channels. To convert the ADC digital reading to a floating-point value, follow these steps:
-
-Right shift the ADC reading by 3 bits.
-Multiply the result by 40uV to obtain the absolute voltage.
-Divide the value by the resistance of the SHUNT resistor on PCB (value in Amps)
-Multiply the value by 1000 (value in mAmps)
-For the code implementation, refer to the following GitHub link: INA3221 Code Line on GitHub
+USB to UART Bridge Implemetation
 
 ## STM32H7 Data Flow
 
