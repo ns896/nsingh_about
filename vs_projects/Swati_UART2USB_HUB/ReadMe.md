@@ -19,9 +19,10 @@ This project leverages the TUSB2036 USB hub IC to create a versatile 8-channel U
 
 - [2.0 System Overview](#system-overview)
 
-  - [2.1 TUSB2036VFR Implementation](#tusb2036vfr-implementation)
-  - [2.2 CP2012N-A02-GQFN28R Implementation](#cp2012n_a02_gqfn28r-implementation)
-  - [2.3 INA3221 Measurements SHUNT SUMMATION](#ina3221-measuremetns-shunt-summation)
+  - [2.1 Power Supply Implementation](#power-supply-implementation)
+  - [2.2 TUSB2036VFR Implementation](#tusb2036vfr-implementation)
+  - [2.3 CP2012N-A02-GQFN28R Implementation](#cp2012n_a02_gqfn28r-implementation)
+  - [2.4 INA3221 Measurements SHUNT SUMMATION](#ina3221-measuremetns-shunt-summation)
 
 - [3.0 STM32H7 Data Flow](#stm32h7-data-flow)
 
@@ -77,9 +78,20 @@ The upstream USB port on the Swati board adheres to USB 2.0 specifications, ensu
 
 <p><div align="center"> IMAGE-2 SWATI PCB MarkDown </div> </p>
 
+### Power Supply Implementation
+
+Power Supply Implementation
+The system is powered through a barrel connector with a 2.05mm diameter and a center pin configured as positive. To ensure protection and reliability, the power input includes a 1.5A PTC (Positive Temperature Coefficient) fuse on the main line. This fuse provides overcurrent protection, resetting automatically when the fault condition is removed.
+
+A polarity protection circuit, implemented using a P-channel MOSFET (PMOS), safeguards the system from damage caused by incorrect polarity connections. This circuit allows current flow only when the correct polarity is applied, ensuring safe operation in all conditions.
+
+The onboard power supply uses a high-efficiency switching buck regulator to step down the main input voltage from the barrel connector to regulated outputs of 3.3V and 5.0V. These voltages power various components and subsystems of the board, ensuring stable and reliable operation.
+
+The use of a buck regulator minimizes power loss compared to linear regulators, making the system efficient even under higher loads. This design ensures sufficient current delivery for the UART bridges, USB hub controllers, and other circuit components, while maintaining thermal efficiency and protecting the system from voltage fluctuations.
+
 ### TUSB2036VFR Implementation
 
-TUSB2036VFR Implementation
+
 
 ### CP2012N_A02_GQFN28R Implementation
 
