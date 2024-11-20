@@ -34,6 +34,7 @@ This project leverages the TUSB2036 USB hub IC to create a versatile 8-channel U
 - [5.0 Hardware Design & Other Constrains](#hardware-design)
   - [5.1 INA3221 Hardware Design](#ina3221-breakout-board)
 - [6.0 Conclusion](#firmware)
+- [7.0 Project Misc. Images](#project-images)
 
 <!-- Introduction -->
 
@@ -88,6 +89,14 @@ A polarity protection circuit, implemented using a P-channel MOSFET (PMOS), safe
 The onboard power supply uses a high-efficiency switching buck regulator to step down the main input voltage from the barrel connector to regulated outputs of 3.3V and 5.0V. These voltages power various components and subsystems of the board, ensuring stable and reliable operation.
 
 The use of a buck regulator minimizes power loss compared to linear regulators, making the system efficient even under higher loads. This design ensures sufficient current delivery for the UART bridges, USB hub controllers, and other circuit components, while maintaining thermal efficiency and protecting the system from voltage fluctuations.
+
+<p><div align="center"> <font size="3"> IMAGE-2 SWATI Power Section </font> </div> </p>
+
+![SWATI PowerSupply](/vs_projects/Swati_UART2USB_HUB/assets/Swati_PowerSection.png)
+
+<p><div align="center"> <font size="3"> IMAGE-2 Scope Capture 3V3 nad 5V0 Rails </font> </div> </p>
+
+![SWATI PowerSupply](/vs_projects/Swati_UART2USB_HUB/assets/Power_Scope_Capture.png)
 
 ### TUSB2036VFR Implementation
 
@@ -148,3 +157,9 @@ In the following board implementation the A0 pin of the INA3221 is tied to GND h
 <!--Power Monitor Breakout Board Schematic Snippet -->
 
 ![System Block Diagram](DATA_PACKETS_UART.png)
+
+
+## Project Images
+<p><div align="center"> <font size="5"> IMAGE-Misc.1 SWATI PCB MarkDown </font> </div> </p>
+
+![System Block Diagram](/vs_projects/Swati_UART2USB_HUB/assets/Swati_Probing_Setup.jpeg)
