@@ -95,6 +95,26 @@ The use of a buck regulator minimizes power loss compared to linear regulators, 
 ![SWATI PowerSupply](/vs_projects/Swati_UART2USB_HUB/assets/Power_Scope_Capture.png)
 
 ### TUSB2036VFR Implementation
+TUSB2036 Implementation
+The core USB data line multiplexing on the Swati system is handled by the TUSB2036VFR, 
+a USB 2.0-compliant hub controller. This IC provides efficient USB port multiplication,
+enabling the upstream USB connection to branch into multiple downstream ports while adhering
+to USB specifications.
+
+In addition to data multiplexing, the board incorporates robust power management for each 
+individual downstream port, implemented using the TPS2044 power switch ICs. According to USB 2.0
+ guidelines, each downstream port can draw a maximum of 500mA. The TPS2044 ensures compliance by
+  providing individual power control and monitoring for each port.
+
+Key features of the power management system include:
+
+Port Power Control: The TUSB2036 signals the TPS2044 to power on specific downstream ports as needed.
+Overcurrent Protection: The TPS2044 actively monitors the current drawn by each port. If an overcurrent
+ condition is detected, it cuts off power to the affected port and signals the TUSB2036, which in turn 
+ informs the host system about the issue via dedicated overcurrent detection lines.
+This integration ensures reliable operation by protecting the USB host and downstream devices from damage 
+due to excessive current draw, while maintaining seamless communication and power management across all 
+ports.
 
 ### CP2012N_A02_GQFN28R Implementation
 
@@ -109,7 +129,7 @@ Silicon Labs provides dedicated drivers for the USB-to-UART bridge, which can be
 installed to enable full compatibility and functionality.
 
 ### Ubuntu Bringup
-On plugging the power and the USB port into a Ubuntu Machines the USB-Uart bridges and the USB mux briges are recognized.
+On plugging the power and the USB port into a Ubuntu Machines the USB-Uart bridges and the USB mux briges are recognized. 
 
 + Lines with Texas Instruments part depicts the USB Multiplexing silicon.
 + Lines with Silicon Labs depicts the USB-UART bridge silicon.
