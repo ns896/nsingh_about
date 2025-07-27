@@ -6,7 +6,7 @@ Hanumans personal webpage for the display of my work to the world out there.
 
 ## Contact
 
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+If you want to contact me you can reach me at [LINKEDIN](https://www.linkedin.com/in/navneetsingh1995/).
 
 ## License
 
