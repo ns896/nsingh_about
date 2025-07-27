@@ -157,3 +157,6 @@ Example configuration in `CAN_Simulator.py`:
 ## Video Of the Cpp Dash Working
 video for the TUI running :
 https://youtu.be/4FiFbgb73mQ
+
+Video of the Setup Used : 
+https://www.youtube.com/shorts/QEcf5zgolIk
