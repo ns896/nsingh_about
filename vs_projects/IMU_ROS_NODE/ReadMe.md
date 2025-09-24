@@ -27,8 +27,8 @@ Ever wondered how robots, drones, and VR headsets know exactly how they're orien
 - [2.0 Hardware Overview](#hardware-overview)
 
 - [3.0 MCU PC Interface](#mcu-pc-interface)
-
-
+    - [3.1 Termianl Data Monitor ](#terminal-data-monitoring)
+    - [3.1 Data Structure ](#-data-format--structure)
 - [4.0 Project Misc. Images](#project-images)
 
 - [5.0 CAN Data Stream Simulator](#can-bus-uart-simulator)
@@ -49,12 +49,12 @@ Ever wondered how robots, drones, and VR headsets know exactly how they're orien
 
 ## MCU PC Interface
 
-### 🔌 Communication Protocol
+### Communication Protocol
 
 The ATMEGA-328P interfaces with the PC using a **5V TTL-USB bridge** at a baud rate of **115,200 bits/second**. This creates a reliable serial communication channel for streaming real-time sensor data.
 <br> `ToDo :` Later I want to run the same data over the `usb-uart` bridge using a ``ModBus``  protocol to better deal with data corruption over transmission.
 
-### 📊 Data Format & Structure
+### Data Format & Structure
 
 The microcontroller outputs **JSON-formatted sensor data** containing all 9-axis measurements plus temperature:
 
@@ -83,15 +83,19 @@ The microcontroller outputs **JSON-formatted sensor data** containing all 9-axis
 - Gyroscope drift correction
 - Temperature-compensated readings
 
-**Optimized Performance:**
-- **DLPF Level 6**: Achieves lowest noise levels
-- **100Hz Magnetometer**: Balanced speed vs. power consumption
-- **JSON Output**: Easy parsing for ROS2 nodes
-- **1ms Update Rate**: Real-time responsiveness
-
-
-
 *This interface demonstrates the complete hardware-software bridge from raw sensor data to structured, real-time data streams ready for advanced robotics applications.*
+
+### Terminal Data Monitoring
+
+To view the real-time sensor data stream in the terminal, use the following minicom command:
+
+```bash
+minicom -D /dev/ttyUSB0 -b 115200
+```
+**Pro Tips:**
+- Use `Ctrl+A` then `X` to exit minicom
+- For persistent connection: `minicom -D /dev/ttyUSB0 -b 115200 -C sensor_data.log`
+- Check available ports: `dmesg | grep tty` after connecting
 
 <!-- Block Diagram of Hardware Used-->
 
