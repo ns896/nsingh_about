@@ -1,5 +1,13 @@
 # CAR DashBoard Using OBD-II CAN BUS
 
+## Video Of the Cpp Dash Working
+video for the TUI running :
+https://youtu.be/4FiFbgb73mQ
+
+Video of the Setup Used : 
+https://www.youtube.com/shorts/QEcf5zgolIk
+
+##
 This project uses an Arduino-UNO microcontroller board along with a CAN bus shield to grab messages from the OBD-II port of the CAR and then later repackage them and stream the messages to a PC using UART protocol.
 this UART stream is then later decompressed and reformatted into the right message structure based on the DBC files for the CAR.
 
@@ -153,10 +161,3 @@ The `CAN_Simulator.py` script has several configurable parameters:
 
 Example configuration in `CAN_Simulator.py`:
 
-
-## Video Of the Cpp Dash Working
-video for the TUI running :
-https://youtu.be/4FiFbgb73mQ
-
-Video of the Setup Used : 
-https://www.youtube.com/shorts/QEcf5zgolIk
