@@ -31,7 +31,7 @@ Ever wondered how robots, drones, and VR headsets know exactly how they're orien
     - [3.1 Data Structure ](#-data-format--structure)
 - [4.0 MCU Firmware Loop Data Flow](#mcu-firmware-flow)
 
-- [5.0 CAN Data Stream Simulator](#can-bus-uart-simulator)
+- [5.0 Sesnor Data Pipeline](#sensor-data-pipeline)
 
 ## Intro 
 ### Main Silicon Components 
@@ -112,5 +112,11 @@ The **ATMEGA328P** serves as the primary computational unit, implementing a real
 
 ![System Block Diagram](assets/MCU_Firmware_FLow.png)
 <p><div align="center"> IMAGE-3 - MCU Firmware Code Flow </div> </p>
+
+
+## Sensor Data Pipeline
+![System Block Diagram](assets/ROS_Nodes.png)
+<p><div align="center"> IMAGE-4 - Software - Data Pipeline IMU </div> </p>
+
 
 
