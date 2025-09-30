@@ -29,7 +29,7 @@ Ever wondered how robots, drones, and VR headsets know exactly how they're orien
 - [3.0 MCU PC Interface](#mcu-pc-interface)
     - [3.1 Termianl Data Monitor ](#terminal-data-monitoring)
     - [3.1 Data Structure ](#-data-format--structure)
-- [4.0 Project Misc. Images](#project-images)
+- [4.0 MCU Firmware Loop Data Flow](#mcu-firmware-flow)
 
 - [5.0 CAN Data Stream Simulator](#can-bus-uart-simulator)
 
@@ -52,7 +52,7 @@ Ever wondered how robots, drones, and VR headsets know exactly how they're orien
 ### Communication Protocol
 
 The ATMEGA-328P interfaces with the PC using a **5V TTL-USB bridge** at a baud rate of **115,200 bits/second**. This creates a reliable serial communication channel for streaming real-time sensor data.
-<br> `ToDo :` Later I want to run the same data over the `usb-uart` bridge using a ``ModBus``  protocol to better deal with data corruption over transmission.
+<br><br> `ToDo :` Later I want to run the same data over the `usb-uart` bridge as a physical layer but use a ``ModBus``  protocol to better deal with data corruption over transmission.
 
 ### Data Format & Structure
 
@@ -92,7 +92,7 @@ To view the real-time sensor data stream in the terminal, use the following mini
 ```bash
 minicom -D /dev/ttyUSB0 -b 115200
 ```
-**Pro Tips:**
+**NSingh Pro Tips for minicom:**
 - Use `Ctrl+A` then `X` to exit minicom
 - For persistent connection: `minicom -D /dev/ttyUSB0 -b 115200 -C sensor_data.log`
 - Check available ports: `dmesg | grep tty` after connecting
@@ -101,3 +101,16 @@ minicom -D /dev/ttyUSB0 -b 115200
 
 ![System Block Diagram](assets/UART_USB_Bridge_minicom_Snap.png)
 <p><div align="center"> IMAGE-2 - A Still from MiniCom Terminal</div> </p>
+
+## MCU Firmware Flow
+
+### 🧠 Embedded System Architecture
+
+The **ATMEGA328P** serves as the primary computational unit, implementing a real-time embedded system architecture optimized for high-frequency sensor data acquisition and processing.
+
+### Real-Time Processing Pipeline
+
+![System Block Diagram](assets/MCU_Firmware_FLow.png)
+<p><div align="center"> IMAGE-3 - MCU Firmware Code Flow </div> </p>
+
+
