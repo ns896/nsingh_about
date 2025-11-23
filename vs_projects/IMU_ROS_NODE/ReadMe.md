@@ -1,6 +1,9 @@
 # IMU Pose Estimator In Ros2 RViz
 
-## Video Blogs 
+## Video Blogs
+- [Live Data Plotter- quick Video]](https://youtu.be/YiuW1HXjquA) 
+- [YouTube Video Overview Long](https://youtu.be/0akgwjF98Gg)
+- [Live 3D Pose Tracking in RViz](https://youtu.be/example3)
 
 ## Introduction
 
