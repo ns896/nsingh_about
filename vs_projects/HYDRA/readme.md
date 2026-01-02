@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>HYDRA ML V5 (Mahanidra PoC)</h1>
+  <h1>HYDRA ML V5 </h1>
 </div> 
 
 <div align="left">
