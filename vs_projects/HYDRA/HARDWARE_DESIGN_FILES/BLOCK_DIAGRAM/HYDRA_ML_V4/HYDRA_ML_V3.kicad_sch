@@ -1,0 +1,1087 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "fea627ab-c9af-4a95-999c-c97ead2f931c")
+	(paper "A4")
+	(lib_symbols)
+	(polyline
+		(pts
+			(xy 43.18 106.68) (xy 43.18 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "003337f9-ed0e-4700-a3ff-c0844aa6bf04")
+	)
+	(polyline
+		(pts
+			(xy 215.9 127) (xy 213.36 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00b97949-3101-4f28-beda-79e97518eaa5")
+	)
+	(polyline
+		(pts
+			(xy 205.74 48.26) (xy 203.2 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04a69e04-e47d-4f34-a52a-f26bf25c6624")
+	)
+	(polyline
+		(pts
+			(xy 172.72 134.62) (xy 215.9 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a12a930-ab87-4dc1-9057-c7b7a6512d67")
+	)
+	(polyline
+		(pts
+			(xy 213.36 129.54) (xy 215.9 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b6c62d6-9fba-4cc8-a7bd-60eece67dea3")
+	)
+	(polyline
+		(pts
+			(xy 271.526 51.308) (xy 274.066 48.768)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b8bf2fa-ee29-406e-b121-a1050d25cd17")
+	)
+	(polyline
+		(pts
+			(xy 55.88 48.26) (xy 54.61 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b97910d-a174-4bd9-88d6-1a90294e9973")
+	)
+	(polyline
+		(pts
+			(xy 203.2 66.04) (xy 205.74 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c608616-7c3a-44d6-b25e-e4dae33278c5")
+	)
+	(polyline
+		(pts
+			(xy 43.18 63.5) (xy 43.18 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ddcd18d-6f23-487d-85f7-2c305e8ec453")
+	)
+	(polyline
+		(pts
+			(xy 173.1922 91.4361) (xy 215.9 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10c61e63-8a48-4046-8692-6c34cfc28b4f")
+	)
+	(polyline
+		(pts
+			(xy 203.2 50.8) (xy 205.74 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "169a7457-6f57-4cf5-b97e-a87da5a40ee2")
+	)
+	(polyline
+		(pts
+			(xy 43.18 48.26) (xy 55.88 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "194012a3-a99e-4ded-a49f-6c94a0521bd9")
+	)
+	(polyline
+		(pts
+			(xy 213.36 132.08) (xy 213.36 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c0794f9-8a58-424c-9907-7e061b494608")
+	)
+	(polyline
+		(pts
+			(xy 223.52 86.36) (xy 231.14 86.36)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "28f59892-0079-41da-9b15-948163ef86b0")
+	)
+	(polyline
+		(pts
+			(xy 226.06 124.46) (xy 233.68 124.46)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "2960d7f6-cdb5-43cd-99ee-b9c0ff8d7743")
+	)
+	(polyline
+		(pts
+			(xy 175.26 48.26) (xy 205.74 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d51caf9-6f24-4819-94e7-b7e7c7019c52")
+	)
+	(polyline
+		(pts
+			(xy 215.9 134.62) (xy 213.36 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f44e318-e11d-4b42-9d75-4e6f0151e475")
+	)
+	(polyline
+		(pts
+			(xy 203.2 60.96) (xy 203.2 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f7eeb75-f59b-4496-a31d-be8d92a9ee71")
+	)
+	(polyline
+		(pts
+			(xy 233.68 124.46) (xy 233.68 144.78)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "3056a98e-7391-48e1-bf46-3dc402c93e26")
+	)
+	(polyline
+		(pts
+			(xy 213.36 124.46) (xy 213.36 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "381a2e52-816f-4f13-8c27-3101812e4db2")
+	)
+	(polyline
+		(pts
+			(xy 43.18 39.878) (xy 43.18 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "434e1c73-f18b-485d-abc3-ae108b1d74f0")
+	)
+	(polyline
+		(pts
+			(xy 173.1922 126.9961) (xy 215.9 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "469ba60e-940d-4341-b63c-0afe3215042b")
+	)
+	(polyline
+		(pts
+			(xy 274.066 48.768) (xy 271.526 46.228)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47a1a884-dab3-4ae0-b7a5-442eb4fd9eb7")
+	)
+	(polyline
+		(pts
+			(xy 54.61 46.99) (xy 55.88 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52a4bc87-2e8c-408d-b260-3f3a00e75afc")
+	)
+	(polyline
+		(pts
+			(xy 54.61 46.99) (xy 55.88 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5492b136-59b3-457c-b79b-eb2885544b88")
+	)
+	(polyline
+		(pts
+			(xy 53.34 121.92) (xy 53.34 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55758bdf-d976-4f3a-a2f7-fb4659fa6edb")
+	)
+	(polyline
+		(pts
+			(xy 43.18 96.52) (xy 43.18 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55ad5b82-f1c2-4787-b2d7-3dbe482dc2b6")
+	)
+	(polyline
+		(pts
+			(xy 223.52 106.68) (xy 231.14 106.68)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "5a2e98f0-1bc1-4787-84a9-26c07662ec34")
+	)
+	(polyline
+		(pts
+			(xy 43.18 63.5) (xy 55.88 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "600f9e6d-2b50-4c7c-85c4-a7103faa3335")
+	)
+	(polyline
+		(pts
+			(xy 54.61 46.99) (xy 54.61 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69ac687f-230d-40e3-8fb0-d74a528987f6")
+	)
+	(polyline
+		(pts
+			(xy 53.34 127) (xy 55.88 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c260190-fd13-44ab-b2df-474f9cd2bb92")
+	)
+	(polyline
+		(pts
+			(xy 173.2748 106.7753) (xy 215.8196 106.7885)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7048edf2-c743-49fa-bc97-8342a8fc5815")
+	)
+	(polyline
+		(pts
+			(xy 215.9 99.06) (xy 213.36 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "745c49fe-ad96-48a2-8812-e4cfab472094")
+	)
+	(polyline
+		(pts
+			(xy 213.36 101.6) (xy 215.9 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76118762-4c09-462b-9ecc-409df64a0f3f")
+	)
+	(polyline
+		(pts
+			(xy 43.18 86.36) (xy 55.88 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8098f0f3-d141-4ebd-ab6e-1e1de3fdd10e")
+	)
+	(polyline
+		(pts
+			(xy 43.18 96.52) (xy 55.88 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8619559f-d4ea-4468-b8e7-e7007290cc60")
+	)
+	(polyline
+		(pts
+			(xy 213.36 93.98) (xy 215.9 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8969fabf-bd32-407a-aba8-8a26caaf57d7")
+	)
+	(polyline
+		(pts
+			(xy 175.26 63.5) (xy 205.74 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a441010-bdee-40a9-b210-0a7a6e21c677")
+	)
+	(polyline
+		(pts
+			(xy 271.526 46.228) (xy 271.526 51.308)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a9778fb-cdbb-4e6a-9bce-1b975994f3e0")
+	)
+	(polyline
+		(pts
+			(xy 231.14 86.36) (xy 231.14 106.68)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "9050c2e2-89e7-4f15-9ff7-7acf69085034")
+	)
+	(polyline
+		(pts
+			(xy 213.2796 109.3285) (xy 215.8196 106.7885)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a15c74ab-0077-43a3-83f2-daa43f56c841")
+	)
+	(polyline
+		(pts
+			(xy 213.36 137.16) (xy 215.9 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6064979-53ce-4f86-ac45-fe5f9418b6cf")
+	)
+	(polyline
+		(pts
+			(xy 226.06 144.78) (xy 233.68 144.78)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "b7ccce9d-f240-4ecb-ae4e-b68c261a360e")
+	)
+	(polyline
+		(pts
+			(xy 213.36 96.52) (xy 213.36 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c278c48a-0bed-4c8f-9945-d8dbb26152e5")
+	)
+	(polyline
+		(pts
+			(xy 53.34 83.82) (xy 53.34 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4f1628d-edec-49dd-81cd-ef39d0f645c9")
+	)
+	(polyline
+		(pts
+			(xy 205.74 63.5) (xy 203.2 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8db6092-d5d0-452d-9501-1e7d77e93752")
+	)
+	(polyline
+		(pts
+			(xy 215.8196 106.7885) (xy 213.2796 104.2485)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8c40aba-16ce-458a-9b95-6fe4bb39c6d3")
+	)
+	(polyline
+		(pts
+			(xy 261.366 48.768) (xy 274.066 48.768)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da84a517-38ec-4d35-9362-0d8e95779267")
+	)
+	(polyline
+		(pts
+			(xy 213.36 88.9) (xy 213.36 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbb0f959-bb2f-4202-aebf-ad05e8d78f04")
+	)
+	(polyline
+		(pts
+			(xy 43.18 68.58) (xy 43.18 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df3bfad0-fb99-4b24-8cfa-aef683680d74")
+	)
+	(polyline
+		(pts
+			(xy 203.2 45.72) (xy 203.2 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3109dee-354a-4d4a-bc9e-498bae821185")
+	)
+	(polyline
+		(pts
+			(xy 213.2796 104.2485) (xy 213.2796 109.3285)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e36ebf19-1cd7-4608-982b-68bf59e70442")
+	)
+	(polyline
+		(pts
+			(xy 172.72 99.06) (xy 215.9 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e57c5593-b22e-42e3-8afe-794a3a491e4c")
+	)
+	(polyline
+		(pts
+			(xy 53.34 88.9) (xy 55.88 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e792525c-8644-4660-a84a-8d5b25b4e246")
+	)
+	(polyline
+		(pts
+			(xy 215.9 91.44) (xy 213.36 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8e42272-7cac-4d47-8abc-23dc899cf9cc")
+	)
+	(polyline
+		(pts
+			(xy 55.88 86.36) (xy 53.34 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efd16182-7b56-4856-bad8-f9e326878a6a")
+	)
+	(polyline
+		(pts
+			(xy 55.88 124.46) (xy 53.34 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0f96cbd-0425-4dd3-bc8b-ec099d45f5c6")
+	)
+	(polyline
+		(pts
+			(xy 43.18 124.46) (xy 55.88 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f203cb33-d24a-4669-95f2-dc652b661f85")
+	)
+	(rectangle
+		(start 205.8789 42.8106)
+		(end 261.366 52.9706)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 697f27fc-ee79-412a-aed1-5349ae575ed5)
+	)
+	(rectangle
+		(start 55.88 44.958)
+		(end 175.26 67.818)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 9b3bef47-77ad-4ebd-b85d-007eaa34e195)
+	)
+	(rectangle
+		(start 55.88 82.804)
+		(end 173.228 111.76)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 9f559903-5668-423d-b413-a4063d0fefdf)
+	)
+	(rectangle
+		(start 206.375 58.42)
+		(end 261.8621 68.58)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid b6413081-28a4-44ff-b477-30cf62785961)
+	)
+	(rectangle
+		(start 56.642 120.65)
+		(end 173.99 149.606)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f035ef04-97ea-4bbe-a697-bac102009196)
+	)
+	(text "HYDRA1\n"
+		(exclude_from_sim no)
+		(at 164.338 37.338 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "141115d2-ab4f-448a-882d-7f73b27a6e4f")
+	)
+	(text "LIDAR IN (J7)\n"
+		(exclude_from_sim no)
+		(at 69.85 49.276 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "1cf485fb-3070-41bf-a373-eaa54ed883e5")
+	)
+	(text "Camera Card Trigger (1V8)\n"
+		(exclude_from_sim no)
+		(at 149.606 48.768 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "276ae73b-eaac-4d1e-af04-8610b353d04d")
+	)
+	(text "J12(TRIG) - J4 (Clk)\n"
+		(exclude_from_sim no)
+		(at 194.31 133.35 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "2a5d212e-ff89-4576-a747-d1d05b934487")
+	)
+	(text "J13(TRIG) - J3 (Clk)\n"
+		(exclude_from_sim no)
+		(at 193.04 104.14 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "2bd67b3e-2795-4b62-a58c-81adaa69ca65")
+	)
+	(text "HYDRA 3\n"
+		(exclude_from_sim no)
+		(at 164.338 115.062 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "32ce1c4e-b598-4062-9627-9405bbd0fef5")
+	)
+	(text "BRICK GPIO for Camera\n TimeStamp\n"
+		(exclude_from_sim no)
+		(at 234.95 63.5 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "355a5d3b-1e4c-421c-96e0-0899301a5221")
+	)
+	(text "LIDAR IN(J7)\n"
+		(exclude_from_sim no)
+		(at 70.612 124.968 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "35a75de1-f4a4-48ef-8524-42123201ea25")
+	)
+	(text "FRONT R.Head 1 Trig\n"
+		(exclude_from_sim no)
+		(at 151.765 90.805 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "44df95fb-96ab-4070-bdef-9e1f9c94401d")
+	)
+	(text "J12(TRIG) - J4 (Clk)\n"
+		(exclude_from_sim no)
+		(at 193.04 96.52 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "4a326edb-9399-4dfb-ac28-8e24ebd5149f")
+	)
+	(text "BRICK GPIO TRIGGER(3V3)"
+		(exclude_from_sim no)
+		(at 147.066 65.024 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "55904b70-7dd9-47c2-925b-085099bb0f89")
+	)
+	(text "J4\n\n"
+		(exclude_from_sim no)
+		(at 180.34 65.024 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "6f497da0-8ed8-434d-bfea-546fa382ca2f")
+	)
+	(text "ECO-PA-0102-01-0002\n"
+		(exclude_from_sim no)
+		(at 153.67 119.634 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+				(color 194 0 0 1)
+			)
+		)
+		(uuid "80a9e944-2053-4379-bf26-55876d87968b")
+	)
+	(text "NOTE : \n1. HYDRA 1 is running at 40MHz (InCase we want to swap and still use a externl triggered R.Head)\n2. HYDRA 2 & HYDRA 3 is running at 40Mhz internal clock @ 0v9 Vpp\n"
+		(exclude_from_sim no)
+		(at 12.7 160.02 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+			(justify left)
+		)
+		(uuid "8a869c44-81ae-464e-8f6d-ced8cf07b352")
+	)
+	(text "ML ZEN-CAR RECORDING SETUP V5"
+		(exclude_from_sim no)
+		(at 147.32 17.78 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+				(color 194 0 0 1)
+			)
+		)
+		(uuid "8b8ddc21-155a-43ea-a2c4-b2542a3831de")
+	)
+	(text "J11(TRIG) - J5 (Clk)\n"
+		(exclude_from_sim no)
+		(at 193.04 88.9 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "962156b6-bca7-46e1-a15b-283f8ad4a9b6")
+	)
+	(text "From HANSAI LIDAR\n"
+		(exclude_from_sim no)
+		(at 45.212 34.036 0)
+		(effects
+			(font
+				(face "Calibri Light")
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "9a700cee-0cea-4b3a-adb4-f0a4da844ad0")
+	)
+	(text "ECO-PA-0102-01-0001"
+		(exclude_from_sim no)
+		(at 153.924 43.18 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+				(color 194 0 0 1)
+			)
+		)
+		(uuid "9dd0be02-5d4a-41d2-ab01-18bdd9e46bdd")
+	)
+	(text "CLOCK \n  +\nTRIGGER"
+		(exclude_from_sim no)
+		(at 243.84 134.62 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "a2601c4a-afae-43a2-bb98-30836d1391c5")
+	)
+	(text "LIDAR OUT(J8)"
+		(exclude_from_sim no)
+		(at 72.898 96.774 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "ac077c91-2b68-4c7b-848d-4ba858093695")
+	)
+	(text "J1\n"
+		(exclude_from_sim no)
+		(at 180.848 46.99 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "ac8748bc-214e-4b87-a6e8-0445db937405")
+	)
+	(text "ECO-PA-0102-01-0002\n"
+		(exclude_from_sim no)
+		(at 152.908 81.788 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+				(color 194 0 0 1)
+			)
+		)
+		(uuid "b522b88b-812f-431c-b317-0dda182c2757")
+	)
+	(text "HYDRA 2\n"
+		(exclude_from_sim no)
+		(at 163.576 77.216 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "ba20b6db-8c31-498a-bd99-49ffdfa46a82")
+	)
+	(text "LIDAR OUT (J8)\n"
+		(exclude_from_sim no)
+		(at 71.628 64.262 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "bf6949a2-95fd-4176-b6ca-f2ac186870b4")
+	)
+	(text "LIDAR IN(J7)\n"
+		(exclude_from_sim no)
+		(at 69.85 87.122 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "c920a879-734d-4773-80f3-4bb4ca144a2c")
+	)
+	(text "SILOXANE Board \nPA-0111-01"
+		(exclude_from_sim no)
+		(at 243.586 38.608 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "cf3974bc-4a96-4c96-9f03-5c88fb353e1c")
+	)
+	(text "Navneet Singh"
+		(exclude_from_sim no)
+		(at 264.16 170.18 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "d4c34af2-63ad-4960-9d39-e46d6b015bab")
+	)
+	(text "J11(TRIG) - J5 (Clk)\n"
+		(exclude_from_sim no)
+		(at 194.31 125.73 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "daf589f1-e99b-4d23-9484-348cdfda4a25")
+	)
+	(text "BACK R.Head 1 Trig\n"
+		(exclude_from_sim no)
+		(at 154.94 127 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "e8193974-7c1c-431e-8b9f-25bf224ac48e")
+	)
+	(text "LIDAR OUT(J8)"
+		(exclude_from_sim no)
+		(at 73.66 134.62 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "e989eb5e-0acd-41d1-aef3-9d0ce235dd75")
+	)
+	(text "BACK R.Head 2 Trig\n"
+		(exclude_from_sim no)
+		(at 154.94 134.62 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "f0a8337d-34db-48d9-9174-ddb79e6132d7")
+	)
+	(text "ESD + Over Voltage Protection\n(Sits inside of brick)"
+		(exclude_from_sim no)
+		(at 233.426 48.768 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "f558dc10-4a7d-41e2-a94a-b5ebb9d38e62")
+	)
+	(text "FRONT R.Head 3 Trig\n"
+		(exclude_from_sim no)
+		(at 151.13 106.68 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "f578284b-f831-4887-83ef-0ded76d16176")
+	)
+	(text "FRONT R.Head 2 Trig\n"
+		(exclude_from_sim no)
+		(at 151.765 99.06 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "f800cb03-0d0e-4551-9e36-5f1f0bc43b34")
+	)
+	(text "CLOCK \n  +\nTRIGGER"
+		(exclude_from_sim no)
+		(at 241.935 95.885 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "fea30191-aa8a-4ba1-822a-8560beabb7d4")
+	)
+	(sheet
+		(at 12.7 187.96)
+		(size 12.7 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "51ebb5f3-bc4d-4a9c-9777-240a37ba1feb")
+		(property "Sheetname" "ECO-PA-0102-01-0001"
+			(at 12.7 187.2484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ECO-PA-0102-01-0001.kicad_sch"
+			(at 12.7 196.1646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "HYDRA_ML_V3"
+				(path "/fea627ab-c9af-4a95-999c-c97ead2f931c"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 43.18 190.5)
+		(size 12.7 5.08)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c9fa4284-5849-482c-8f88-b77fd52068a3")
+		(property "Sheetname" "ECO-PA-0102-01-0002"
+			(at 43.18 189.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ECO-PA-0102-01-0002.kicad_sch"
+			(at 43.18 196.1646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "HYDRA_ML_V3"
+				(path "/fea627ab-c9af-4a95-999c-c97ead2f931c"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
